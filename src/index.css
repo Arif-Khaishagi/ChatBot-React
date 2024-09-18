@@ -1,0 +1,82 @@
+[data-theme="light"] {
+  --color-white: #ffffff;
+  --color-black: #3c3c3c;
+  --color-primary1: #9785ba;
+  --color-primary2: #af9fcd;
+  --color-primary3: #ffffff;
+  --color-primary4: #f9fafa;
+  --color-primary5: #ede4ff;
+  --color-secondary1: #d7c7f4;
+  --color-secondary2: #ffffff;
+  --color-secondary3: #faf7ff;
+  --color-logo: #9785ba;
+}
+
+[data-theme="dark"] {
+  --color-white: #3c3c3c;
+  --color-black: #ffffff;
+  --color-primary1: #3c3c3c;
+  --color-primary2: #959595;
+  --color-primary3: #ffffff;
+  --color-primary4: #f9fafa;
+  --color-primary5: #e4e4e4;
+  --color-secondary1: rgb(173, 173, 173);
+  --color-secondary2: #ffffff;
+  --color-secondary3: #faf7ff;
+  --color-logo: #faf7ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--color-secondary1) 0%,
+    var(--color-secondary2) 100%
+  );
+  color: var(--color-black);
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
